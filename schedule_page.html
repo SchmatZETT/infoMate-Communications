@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予定表‐一覧</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="normal">
+            <ul>
+                <li class="icon"><a href="top.html"><img src="icon.png"width="250"height="70"></a></li>
+            </ul>
+        </nav>
+         <nav id="navi" class="navi">
+        <ul class="menu">
+         <li class="nav-btn"><a href="top.html">トップ</a></li>
+         <li class="nav-btn"><a href="contact_page.html">お知らせ</a></li>
+         <li class="nav-btn"><a href="schedule_page.html">予定表一覧</a></li>
+         <li class="nav-btn"><a href="absent_contact_page.html">欠席連絡</a></li>
+         <li class="nav-btn"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+    <table class="schedule">
+            <thead>
+                <tr>
+                    <th>予定表一覧-表示したい月をクリック↓</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="clickable" data-img="schedule_2025_04.jpg">2025年4月</td>
+            </tr>
+            <tr>
+                <td class="clickable" data-img="schedule_2025_05.jpg">2025年5月</td>
+            </tr>
+            <tr>
+                <td class="clickable" data-img="schedule_2025_06.jpg">2025年6月</td>
+            </tr>
+            <tr>
+                <td class="clickable" data-img="">2025年7月</td>
+            </tr>
+            <tr>
+                <td class="clickable" data-img="schedule_2025_09.jpg">2025年9月</td>
+            </tr>
+            </tbody>
+    </table>
+    <div class="box"></div>
+    <div id="overlay" class="overlay">
+        <span id="closeBtn" class="close">&times;</span>
+        <img id="overlayImg" src="" alt="表示できる画像がありません">
+    </div>
+    </main>
+<script src="app.js"></script> 
+    <script>
+        document.querySelector('.hamburger').addEventListener
+        ('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navi').classList.toggle
+            ('active');
+        });
+    </script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

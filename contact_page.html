@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>お知らせ‐一覧</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+            <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="normal">
+            <ul>
+                <li class="icon"><a href="top.html"><img src="icon.png"width="250"height="70"></a></li>
+            </ul>
+        </nav>
+         <nav id="navi" class="navi">
+        <ul class="menu">
+         <li class="nav-btn"><a href="top.html">トップ</a></li>
+         <li class="nav-btn"><a href="contact_page.html">お知らせ</a></li>
+         <li class="nav-btn"><a href="schedule_page.html">予定表一覧</a></li>
+         <li class="nav-btn"><a href="absent_contact_page.html">欠席連絡</a></li>
+         <li class="nav-btn"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+     <div>
+            <p class="order">今日</p>
+        </div>
+        <div class="box"><p class="clickable" data-img="2025_gasshou.jpg">お知らせ：合唱祭について（クリックすると合唱祭の説明画像を閲覧できます）
+        </p></div>
+        <div id="overlay" class="overlay">
+        <span id="closeBtn" class="close">&times;</span>
+        <img id="overlayImg" src="" alt="表示できる画像がありません">
+    </div>
+        <div>
+        <p>このページはまだ開発中です…</p>
+    </div>
+    <script src="app.js"></script> 
+    <script>
+        document.querySelector('.hamburger').addEventListener
+        ('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navi').classList.toggle
+            ('active');
+        });
+    </script>
+</body>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</html>
+

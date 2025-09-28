@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>インフォメイト‐トップ</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="normal">
+            <ul>
+                <li class="icon"><a href="top.html"><img src="icon.png"width="250"height="70"></a></li>
+            </ul>
+        </nav>
+         <nav id="navi" class="navi">
+        <ul class="menu">
+         <li class="nav-btn"><a href="top.html">トップ</a></li>
+         <li class="nav-btn"><a href="contact_page.html">お知らせ</a></li>
+         <li class="nav-btn"><a href="schedule_page.html">予定表一覧</a></li>
+         <li class="nav-btn"><a href="absent_contact_page.html">欠席連絡</a></li>
+         <li class="nav-btn"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="box top2"><a href="schedule_page.html">予定表を見る</a></div>
+    <div class="box top"><a href="contact_page.html">お知らせを見る</a></div>
+    <div class="box top"><a href="absent_contact_page.html">欠席連絡する</a></div>
+    <div class="past hd">更新履歴</div>
+    <hr style="border: none; height: 2px; background-color: silver;">
+    <div class="past li">
+        <a>Ver.0.0.6 : トップに更新履歴リストを作成</a>
+        <hr>
+        <a>Ver.0.0.5 : トップから移動するサイトのリストを作成</a>
+        <hr>
+        <a>Ver.0.0.4.1 :  ハンバーガーメニューボタンやナビゲーションにアニメーションを追加</a>
+        <hr>
+        <a>Ver.0.0.4 : ナビゲーション表示方法をハンバーガーメニューに変更</a>
+        <hr>
+        <a>Ver.0.0.3 : このサイトについての説明を追加</a>
+        <hr>
+        <a>Ver.0.0.2 : 機能を複数のサイトに分解・転送ナビゲーションを作成</a>
+        <hr>
+        <a>Ver.0.0.1.1 : 欠席連絡・連絡事項閲覧機能を追加</a>
+        <hr>
+        <a>Ver.0.0.1 : 予定表閲覧機能を追加・サイトの名称を仮決定</a>
+    </div>
+    <hr style="border: none; height: 2px; background-color: silver;">
+    <nav class="bottom">
+        <li class="nav-bottom"></li>
+    </nav>
+    <script src="app.js"></script> 
+    <script>
+        document.querySelector('.hamburger').addEventListener
+        ('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navi').classList.toggle
+            ('active');
+        });
+    </script>
+    </body>
+</html>

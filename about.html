@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>サイトについて</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="normal">
+            <ul>
+                <li class="icon"><a href="top.html"><img src="icon.png"width="250"height="70"></a></li>
+            </ul>
+        </nav>
+         <nav id="navi" class="navi">
+        <ul class="menu">
+         <li class="nav-btn"><a href="top.html">トップ</a></li>
+         <li class="nav-btn"><a href="contact_page.html">お知らせ</a></li>
+         <li class="nav-btn"><a href="schedule_page.html">予定表一覧</a></li>
+         <li class="nav-btn"><a href="absent_contact_page.html">欠席連絡</a></li>
+         <li class="nav-btn"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+<div class="title">このサイトを作成した経緯と今後</div>
+<div class="main">学校に関わるものとしてネットワークシステムは最近特に使われる機会が増えてきました。<br>
+    特に最近変化したものと言うと、藤沢市では学校と生徒の親がつながるための「すぐーる」というアプリが使われるようになりました。
+    しかし、すぐーるを利用する場面はものすごく限定的で、利用するためのデバイスが限られていたり、いちいちアプリをダウンロードしたりと、ユーザーフレンドリーではないところがよく目立っています。<br>
+    そこで、今回は学校向けに作っているものの、学校用のソフトに限らずWEBサイト化することでスマホだけでなくPCで利用したり、アプリをダウンロードしなくても利用することができるようになります。<br>
+    また、今後はログインの仕組みを導入したりして、誰でも見れるような危ない状態にせず、親だけではなくその生徒や教諭も同じところから見ることができるようにしたいと思っています。<br>
+    最終的には、皆が使いやすいと思える、使うデバイスや人々をふやすことで効率をあげられるようなものを作りたいと考え、このサイトの作成に取り掛かり始めました。<br>
+    私はこれからの情報化社会において効率・さらなる強力なセキュリティを求められるようになると考えています。だからこそこれからも人々に役立つような技術を磨いていきたいと思っています。<br>
+</div>
+<script src="app.js"></script>
+    <script>
+        document.querySelector('.hamburger').addEventListener
+        ('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navi').classList.toggle
+            ('active');
+        });
+    </script> 
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
